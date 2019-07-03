@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9a828df71b51cfe0acefb592f3b5eb75",
+    "content-hash": "f62c4234273eff05989470210e0e0570",
     "packages": [
         {
             "name": "a5hleyrich/wp-background-processing",
@@ -1157,6 +1157,46 @@
                 "wordpress"
             ],
             "time": "2019-06-17T16:29:12+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/acf-better-search",
+            "version": "3.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-better-search/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-better-search.zip?timestamp=1561584494",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-better-search/"
+        },
+        {
+            "name": "wpackagist-plugin/customize-login-image",
+            "version": "3.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/customize-login-image/",
+                "reference": "tags/3.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/customize-login-image.3.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/customize-login-image/"
         }
     ],
     "packages-dev": [

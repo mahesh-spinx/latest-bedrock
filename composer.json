@@ -63,7 +63,8 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "5.8.1",
     "wp-media/wp-rocket": "^3.3.5",
     "wpackagist-plugin/customize-login-image":"3.3.1",
-    "wpackagist-plugin/acf-better-search":"3.3.1"
+    "wpackagist-plugin/acf-better-search":"3.3.1",
+    "wpackagist-plugin/all-in-one-wp-migration":"6.97"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
