@@ -53,6 +53,13 @@ Config::define('WP_CONTENT_DIR', $webroot_dir . Config::get('CONTENT_DIR'));
 Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_DIR'));
 
 /**
+ * WP Rocket Settings
+ */
+Config::define('WP_ROCKET_EMAIL', env('WP_ROCKET_EMAIL'));
+Config::define('WP_ROCKET_KEY', env('WP_ROCKET_KEY'));
+Config::define('WP_CACHE', env('WP_CACHE'));
+
+/**
  * DB settings
  */
 Config::define('DB_NAME', env('DB_NAME'));
