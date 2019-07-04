@@ -65,7 +65,8 @@
     "wpackagist-plugin/customize-login-image":"3.3.1",
     "wpackagist-plugin/acf-better-search":"3.3.1",
     "wpackagist-plugin/all-in-one-wp-migration":"6.97",
-    "wpackagist-plugin/classic-editor":"1.5"
+    "wpackagist-plugin/classic-editor":"1.5",
+    "wpackagist-plugin/svg-support":"2.3.15"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",
