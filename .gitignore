@@ -24,3 +24,8 @@ web/.htaccess
 
 # WP-CLI
 wp-cli.local.yml
+
+# WP Rocket
+web/app/advanced-cache.php
+web/app/wp-rocket-config/*
+web/app/cache/*
