@@ -62,16 +62,6 @@ if (! defined('WP_CACHE'))
     Config::define('WP_CACHE', env('WP_CACHE'));
 
 /**
- * S3 Settings
- */
-Config::define('S3_UPLOADS_BUCKET', env('S3_UPLOADS_BUCKET'));
-Config::define('S3_UPLOADS_KEY', env('S3_UPLOADS_KEY'));
-Config::define('S3_UPLOADS_SECRET', env('S3_UPLOADS_SECRET'));
-Config::define('S3_UPLOADS_REGION', env('S3_UPLOADS_REGION'));
-Config::define('S3_UPLOADS_BUCKET_URL', env('S3_UPLOADS_BUCKET_URL'));
-Config::define('S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL', env('S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL'));
-
-/**
  * DB settings
  */
 Config::define('DB_NAME', env('DB_NAME'));
