@@ -6,6 +6,7 @@ web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+web/app/ai1wm-backups
 
 # WordPress
 web/wp
@@ -29,3 +30,9 @@ wp-cli.local.yml
 web/app/advanced-cache.php
 web/app/wp-rocket-config/*
 web/app/cache/*
+
+# ignore node modules
+node_modules/
+
+# ignore auth.json
+/auth.json
