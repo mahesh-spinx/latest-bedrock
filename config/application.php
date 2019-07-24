@@ -104,6 +104,50 @@ Config::define('DISALLOW_FILE_EDIT', true);
 Config::define('DISALLOW_FILE_MODS', true);
 
 /**
+ * WP Offload Media
+ */
+Config::define('AS3CFPRO_LICENCE', env('AS3CFPRO_LICENCE'));
+
+/**
+ * WP Offload Media: Cloud File Settings
+ */
+Config::define('AS3CF_SETTINGS', serialize(array(
+    // Storage Provider ('aws', 'do', 'gcp')
+    'provider' => env('AS3CF_PROVIDER'),
+    // Access Key ID for Storage Provider (aws and do only, replace '*')
+    'access-key-id' => env('AS3CF_S3_UPLOADS_KEY'),
+    // Secret Access Key for Storage Providers (aws and do only, replace '*')
+    'secret-access-key' => env('AS3CF_S3_UPLOADS_SECRET'),
+    // GCP Key File Path (gcp only)
+    // Make sure hidden from public website, i.e. outside site's document root.
+    // 'key-file-path' => '/path/to/key/file.json',
+    // Bucket to upload files to
+    'bucket' => env('AS3CF_BUCKET'),
+    // Bucket region (e.g. 'us-west-1' - leave blank for default region)
+    'region' => '',
+    // Automatically copy files to bucket on upload
+    'copy-to-s3' => env('AS3CF_COPY_TO_S3'),
+    // Rewrite file URLs to bucket
+    'serve-from-s3' => env('AS3CF_SERVE_FROM_S3'),
+    // Bucket URL format to use ('path', 'cloudfront')
+    'domain' => env('AS3CF_DOMAIN'),
+    // Custom domain if 'domain' set to 'cloudfront'
+    // 'cloudfront' => 'cdn.exmple.com',
+    // Enable object prefix, useful if you use your bucket for other files
+    'enable-object-prefix' => env('AS3CF_ENABLE_OBJECT_PREFIX'),
+    // Object prefix to use if 'enable-object-prefix' is 'true'
+    'object-prefix' => env('AS3CF_OBJECT_PREFIX'),
+    // Organize bucket files into YYYY/MM directories
+    'use-yearmonth-folders' => env('AS3CF_USE_YEARMONTH_FOLDERS'),
+    // Serve files over HTTPS
+    'force-https' => env('AS3CF_FORCE_HTTPS'),
+    // Remove the local file version once offloaded to bucket
+    'remove-local-file' => env('AS3CF_REMOVE_LOCAL_FILE'),
+    // Append a timestamped folder to path of files offloaded to bucket
+    'object-versioning' => env('AS3CF_OBJECT_VERSIONING'),
+)));
+
+/**
  * Debugging Settings
  */
 Config::define('WP_DEBUG_DISPLAY', false);
