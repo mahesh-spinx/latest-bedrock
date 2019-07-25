@@ -1199,16 +1199,16 @@
         },
         {
             "name": "wp-media/wp-rocket",
-            "version": "v3.3.5.2",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-media/wp-rocket.git",
-                "reference": "3fd199ed5dc05c080a691e747f0d8ef850e4e7e7"
+                "reference": "b8a54656afd7acc86fec1b1ac4e85d7b72ba5317"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/3fd199ed5dc05c080a691e747f0d8ef850e4e7e7",
-                "reference": "3fd199ed5dc05c080a691e747f0d8ef850e4e7e7",
+                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/b8a54656afd7acc86fec1b1ac4e85d7b72ba5317",
+                "reference": "b8a54656afd7acc86fec1b1ac4e85d7b72ba5317",
                 "shasum": ""
             },
             "require": {
@@ -1263,7 +1263,7 @@
                 "minification",
                 "wordpress"
             ],
-            "time": "2019-06-17T16:29:12+00:00"
+            "time": "2019-07-24T13:24:45+00:00"
         },
         {
             "name": "wpackagist-plugin/acf-better-search",
@@ -1287,15 +1287,15 @@
         },
         {
             "name": "wpackagist-plugin/all-in-one-wp-migration",
-            "version": "7.0",
+            "version": "7.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/all-in-one-wp-migration/",
-                "reference": "tags/7.0"
+                "reference": "tags/7.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1387,15 +1387,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.6",
+            "version": "11.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.6"
+                "reference": "tags/11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.7.zip",
                 "reference": null,
                 "shasum": null
             },
