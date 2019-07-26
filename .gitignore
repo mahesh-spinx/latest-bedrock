@@ -15,6 +15,9 @@ web/.htaccess
 # Logs
 *.log
 
+# Windows Thumb
+Thumbs.db
+
 # Dotenv
 .env
 .env.*
