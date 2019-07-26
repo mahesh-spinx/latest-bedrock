@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83988cac33b79d078c39256d73e8b663",
+    "content-hash": "bfb8b1610484a826e6f1247c46493655",
     "packages": [
         {
             "name": "a5hleyrich/wp-background-processing",
@@ -37,10 +37,10 @@
         },
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.8.1",
+            "version": "5.8.2",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.8.1",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.8.2",
                 "reference": null,
                 "shasum": null
             },
@@ -200,6 +200,34 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro",
+            "version": "1.9.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=1.9.8",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro-media-files",
+            "version": "1.4.14",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-media-files&version=1.4.14",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "deliciousbrains-plugin/wp-offload-media",
@@ -1267,7 +1295,7 @@
         },
         {
             "name": "wpackagist-plugin/acf-better-search",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/acf-better-search/",
@@ -1275,7 +1303,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/acf-better-search.zip?timestamp=1561584494",
+                "url": "https://downloads.wordpress.org/plugin/acf-better-search.zip?timestamp=1563876647",
                 "reference": null,
                 "shasum": null
             },
@@ -1284,26 +1312,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/acf-better-search/"
-        },
-        {
-            "name": "wpackagist-plugin/all-in-one-wp-migration",
-            "version": "7.2",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/all-in-one-wp-migration/",
-                "reference": "tags/7.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/all-in-one-wp-migration.7.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/all-in-one-wp-migration/"
         },
         {
             "name": "wpackagist-plugin/classic-editor",
@@ -1326,36 +1334,16 @@
             "homepage": "https://wordpress.org/plugins/classic-editor/"
         },
         {
-            "name": "wpackagist-plugin/customize-login-image",
-            "version": "3.3.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/customize-login-image/",
-                "reference": "tags/3.3.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/customize-login-image.3.3.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/customize-login-image/"
-        },
-        {
             "name": "wpackagist-plugin/disable-comments",
-            "version": "1.9.0",
+            "version": "1.10.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/disable-comments/",
-                "reference": "tags/1.9.0"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/disable-comments.1.9.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.zip?timestamp=1563798431",
                 "reference": null,
                 "shasum": null
             },

@@ -104,6 +104,11 @@ Config::define('DISALLOW_FILE_EDIT', true);
 Config::define('DISALLOW_FILE_MODS', true);
 
 /**
+ * WP Migrate DB Pro
+ */
+Config::define('WPMDB_LICENCE', env('WPMDB_LICENCE'));
+
+/**
  * WP Offload Media
  */
 Config::define('AS3CFPRO_LICENCE', env('AS3CFPRO_LICENCE'));
