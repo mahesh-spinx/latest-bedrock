@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bfb8b1610484a826e6f1247c46493655",
+    "content-hash": "72b637489c761e0b0416e1c0eb45c28a",
     "packages": [
         {
             "name": "a5hleyrich/wp-background-processing",
@@ -52,16 +52,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
+                "reference": "141b272484481432cda342727a427dc1e206bfa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
+                "reference": "141b272484481432cda342727a427dc1e206bfa0",
                 "shasum": ""
             },
             "require": {
@@ -117,6 +117,7 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
+                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -139,6 +140,7 @@
                 "installer",
                 "itop",
                 "joomla",
+                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -168,7 +170,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-08-27T06:10:37+00:00"
+            "time": "2019-08-12T15:00:31+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -289,16 +291,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "4.2.5",
+            "version": "4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "3f582bbb19bec814360bd8b0ee8f52c95183d96a"
+                "reference": "6446170b222869e1e0770c130ead47def5261b51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/3f582bbb19bec814360bd8b0ee8f52c95183d96a",
-                "reference": "3f582bbb19bec814360bd8b0ee8f52c95183d96a",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/6446170b222869e1e0770c130ead47def5261b51",
+                "reference": "6446170b222869e1e0770c130ead47def5261b51",
                 "shasum": ""
             },
             "require": {
@@ -307,8 +309,8 @@
             "require-dev": {
                 "automattic/phpcs-neutron-standard": "^1.5",
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.5",
+                "johnbillion/falsey-assertequals-detector": "^2",
                 "johnbillion/php-docs-standards": "^1",
-                "johnkary/phpunit-speedtrap": "^2",
                 "phpcompatibility/phpcompatibility-wp": "^2",
                 "phpunit/phpunit": "^6",
                 "roots/wordpress": "*",
@@ -318,6 +320,7 @@
                 "wp-phpunit/wp-phpunit": "*"
             },
             "suggest": {
+                "seravo/wp-custom-bulk-actions": "Custom Bulk Actions",
                 "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
             },
             "type": "library",
@@ -325,6 +328,9 @@
                 "wordpress-install-dir": "tests/wordpress"
             },
             "autoload": {
+                "psr-4": {
+                    "ExtCPTs\\Tests\\": "tests/phpunit"
+                },
                 "files": [
                     "extended-cpts.php"
                 ]
@@ -341,7 +347,7 @@
             ],
             "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
             "homepage": "https://github.com/johnbillion/extended-cpts/",
-            "time": "2019-06-27T21:06:36+00:00"
+            "time": "2019-08-25T21:14:07+00:00"
         },
         {
             "name": "league/container",
@@ -519,16 +525,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.24.0",
+            "version": "1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
-                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
+                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
                 "shasum": ""
             },
             "require": {
@@ -593,7 +599,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2018-11-05T09:00:11+00:00"
+            "time": "2019-09-06T13:49:17+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -786,16 +792,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.2.2",
+            "version": "5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.2.2"
+                "reference": "5.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.2",
-                "reference": "5.2.2",
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.2.3",
+                "reference": "5.2.3",
                 "shasum": null
             },
             "require": {
@@ -820,7 +826,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-06-18T17:53:14+00:00"
+            "time": "2019-09-04T22:41:56+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
@@ -1069,16 +1075,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.11.0",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "82ebae02209c21113908c229e9883c419720738a"
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
-                "reference": "82ebae02209c21113908c229e9883c419720738a",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
                 "shasum": ""
             },
             "require": {
@@ -1090,7 +1096,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.11-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -1107,12 +1113,12 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                },
-                {
                     "name": "Gert de Pagter",
                     "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -1123,20 +1129,20 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2019-02-06T07:57:58+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v3.4.0",
+            "version": "v3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92"
+                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5084b23845c24dbff8ac6c204290c341e4776c92",
-                "reference": "5084b23845c24dbff8ac6c204290c341e4776c92",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1bdf24f065975594f6a117f0f1f6cabf1333b156",
+                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156",
                 "shasum": ""
             },
             "require": {
@@ -1145,12 +1151,12 @@
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.6-dev"
                 }
             },
             "autoload": {
@@ -1164,9 +1170,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -1175,20 +1186,20 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-15T22:40:20+00:00"
+            "time": "2019-09-10T21:37:39+00:00"
         },
         {
             "name": "wp-media/rocket-lazyload-common",
-            "version": "v2.4",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-media/rocket-lazyload-common.git",
-                "reference": "fcebb3db1687ce4f88854c6fbc67a36e8ae9e2bf"
+                "reference": "37ca967029f6f86a207a9ae128c9e96bc95219d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-media/rocket-lazyload-common/zipball/fcebb3db1687ce4f88854c6fbc67a36e8ae9e2bf",
-                "reference": "fcebb3db1687ce4f88854c6fbc67a36e8ae9e2bf",
+                "url": "https://api.github.com/repos/wp-media/rocket-lazyload-common/zipball/37ca967029f6f86a207a9ae128c9e96bc95219d7",
+                "reference": "37ca967029f6f86a207a9ae128c9e96bc95219d7",
                 "shasum": ""
             },
             "require": {
@@ -1223,20 +1234,20 @@
                 }
             ],
             "description": "Common Code between WP Rocket and Lazyload by WP Rocket",
-            "time": "2019-07-08T16:41:10+00:00"
+            "time": "2019-09-07T12:37:44+00:00"
         },
         {
             "name": "wp-media/wp-rocket",
-            "version": "v3.3.6",
+            "version": "v3.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-media/wp-rocket.git",
-                "reference": "b8a54656afd7acc86fec1b1ac4e85d7b72ba5317"
+                "reference": "7f9af51eec7336d4bd4d7a0193be8d9f06750d99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/b8a54656afd7acc86fec1b1ac4e85d7b72ba5317",
-                "reference": "b8a54656afd7acc86fec1b1ac4e85d7b72ba5317",
+                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/7f9af51eec7336d4bd4d7a0193be8d9f06750d99",
+                "reference": "7f9af51eec7336d4bd4d7a0193be8d9f06750d99",
                 "shasum": ""
             },
             "require": {
@@ -1291,7 +1302,7 @@
                 "minification",
                 "wordpress"
             ],
-            "time": "2019-07-24T13:24:45+00:00"
+            "time": "2019-08-28T15:04:14+00:00"
         },
         {
             "name": "wpackagist-plugin/acf-better-search",
@@ -1375,15 +1386,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "11.7",
+            "version": "12.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/11.7"
+                "reference": "tags/12.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.11.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.12.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1395,15 +1406,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-mail-smtp",
-            "version": "1.5.2",
+            "version": "1.6.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
-                "reference": "tags/1.5.2"
+                "reference": "tags/1.6.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.1.6.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1683,11 +1694,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "roave/security-advisories": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1"

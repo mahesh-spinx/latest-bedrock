@@ -157,7 +157,7 @@ Config::define('AS3CF_SETTINGS', serialize(array(
  */
 Config::define('WP_DEBUG_DISPLAY', false);
 Config::define('SCRIPT_DEBUG', false);
-ini_set('display_errors', 0);
+ini_set('display_errors', '0');
 
 /**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer
