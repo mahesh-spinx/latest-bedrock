@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72b637489c761e0b0416e1c0eb45c28a",
+    "content-hash": "2111bc6f55047aa108d5fb47c0ed0193",
     "packages": [
         {
             "name": "a5hleyrich/wp-background-processing",
@@ -1187,6 +1187,7 @@
                 "environment"
             ],
             "time": "2019-09-10T21:37:39+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "wp-media/rocket-lazyload-common",
@@ -1423,6 +1424,8 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
+=======
+>>>>>>> upstream/master
         }
     ],
     "packages-dev": [
