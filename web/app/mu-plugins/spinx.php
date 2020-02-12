@@ -31,7 +31,7 @@ add_filter('acf/settings/load_json', function ( $paths ) {
 /**
  * ACF: Load only for developer
  */
-if (WP_ENV === 'development') {
+if (WP_ENV !== 'development') {
     add_action('acf/init', function() {
         acf_update_setting('show_admin', false);
     });
