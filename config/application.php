@@ -76,8 +76,9 @@ Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_D
 Config::define('WP_ROCKET_EMAIL', env('WP_ROCKET_EMAIL'));
 Config::define('WP_ROCKET_KEY', env('WP_ROCKET_KEY'));
 
-if (! defined('WP_CACHE'))
+if (! defined('WP_CACHE')) {
     Config::define('WP_CACHE', env('WP_CACHE'));
+}
 
 /**
  * DB settings

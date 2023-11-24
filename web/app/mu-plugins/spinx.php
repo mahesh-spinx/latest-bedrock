@@ -22,7 +22,7 @@ add_filter('acf/settings/save_json', function ($path) {
     return $path;
 });
 
-add_filter('acf/settings/load_json', function ( $paths ) {
+add_filter('acf/settings/load_json', function ($paths) {
     unset($paths[0]);
     $paths[] = dirname(__FILE__) . '/spinx/acf-json';
     return $paths;
@@ -32,7 +32,7 @@ add_filter('acf/settings/load_json', function ( $paths ) {
  * ACF: Load only for developer
  */
 if (WP_ENV !== 'development') {
-    add_action('acf/init', function() {
+    add_action('acf/init', function () {
         acf_update_setting('show_admin', false);
     });
 }
@@ -40,11 +40,13 @@ if (WP_ENV !== 'development') {
 /**
  * Helper Functions
  */
-function registerModules($modules) {
+function registerModules($modules)
+{
     foreach ($modules as $moduleName) {
         $files = glob(dirname(__FILE__) . '/spinx/'.$moduleName.'/*.php');
 
-        foreach ($files as $file)
+        foreach ($files as $file) {
             require_once($file);
+        }
     }
 }
