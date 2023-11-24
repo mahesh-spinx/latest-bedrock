@@ -28,6 +28,22 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/tabrisrp/wp-background-processing"
+    },
+    {
+      "type":"composer",
+      "url":"https://connect.advancedcustomfields.com"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:spinxdigital/ithemes-security-pro.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://composer.deliciousbrains.com"
     }
   ],
   "require": {
@@ -40,7 +56,19 @@
     "roots/wordpress": "6.4.1",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
-    "wpackagist-theme/twentytwentyfour": "^1.0"
+    "wpackagist-theme/twentytwentyfour": "^1.0",
+    "deliciousbrains-plugin/wp-offload-media": "^2.3",
+    "deliciousbrains-plugin/wp-migrate-db-pro": "^1.9",
+    "deliciousbrains-plugin/wp-migrate-db-pro-media-files": "^1.4",
+    "wpackagist-plugin/acf-better-search":"^4.2",
+    "wp-media/wp-rocket": "^3.4",
+    "wpackagist-plugin/classic-editor":"^1.6",
+    "wpackagist-plugin/svg-support":"^2.5",
+    "wpackagist-plugin/wordpress-seo":"^21.0",
+    "wpackagist-plugin/wp-mail-smtp":"^3.10",
+    "johnbillion/extended-cpts": "^4.2",
+    "wpackagist-plugin/disable-comments":"^2.4",
+    "wpengine/advanced-custom-fields-pro": "^6.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7.1",

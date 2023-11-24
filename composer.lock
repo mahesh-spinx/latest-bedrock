@@ -4,8 +4,57 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6c9f3559ce4480560c9cfd1ee118732",
+    "content-hash": "2434a8a9d0c1a16af179da70f56706d5",
     "packages": [
+        {
+            "name": "cloudflare/cf-ip-rewrite",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cloudflare/cf-ip-rewrite.git",
+                "reference": "48e2ce52e87d3d27cdb662584fccf82efa898bf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cloudflare/cf-ip-rewrite/zipball/48e2ce52e87d3d27cdb662584fccf82efa898bf1",
+                "reference": "48e2ce52e87d3d27cdb662584fccf82efa898bf1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "CloudFlare\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CloudFlare",
+                    "homepage": "http://www.cloudflare.com/"
+                }
+            ],
+            "description": "Library to rewrite CloudFlare IP Addresses to the end-user IP address",
+            "homepage": "https://github.com/cloudflare/cf-ip-rewrite",
+            "keywords": [
+                "cloudflare",
+                "ip rewrite"
+            ],
+            "support": {
+                "issues": "https://github.com/cloudflare/cf-ip-rewrite/issues",
+                "source": "https://github.com/cloudflare/cf-ip-rewrite/tree/master"
+            },
+            "time": "2017-10-10T15:44:33+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v2.2.0",
@@ -152,6 +201,45 @@
             "time": "2022-08-20T06:45:11+00:00"
         },
         {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro",
+            "version": "1.9.14",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro&version=1.9.14"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-migrate-db-pro-media-files",
+            "version": "1.4.16",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-migrate-db-pro-media-files&version=1.4.16"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "deliciousbrains-plugin/wp-offload-media",
+            "version": "2.6.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.deliciousbrains.com/?wc-api=delicious-brains&request=composer_download&package=wp-offload-media&version=2.6.2"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-name": "amazon-s3-and-cloudfront-pro"
+            }
+        },
+        {
             "name": "graham-campbell/result-type",
             "version": "v1.1.2",
             "source": {
@@ -212,6 +300,75 @@
                 }
             ],
             "time": "2023-11-12T22:16:48+00:00"
+        },
+        {
+            "name": "johnbillion/extended-cpts",
+            "version": "4.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnbillion/extended-cpts.git",
+                "reference": "59ce9f4e0422512eec6f698ccba4a6a81b018fdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/59ce9f4e0422512eec6f698ccba4a6a81b018fdb",
+                "reference": "59ce9f4e0422512eec6f698ccba4a6a81b018fdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7 | ^8"
+            },
+            "require-dev": {
+                "automattic/phpcs-neutron-standard": "1.6.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
+                "johnbillion/falsey-assertequals-detector": "^2",
+                "phpcompatibility/phpcompatibility-wp": "^2",
+                "phpunit/phpunit": "^6",
+                "roots/wordpress": "^5.7.0",
+                "vlucas/phpdotenv": "^3",
+                "wp-cli/db-command": "^2.0",
+                "wp-coding-standards/wpcs": "2.3.0",
+                "wp-phpunit/wp-phpunit": "^5.7.0"
+            },
+            "suggest": {
+                "seravo/wp-custom-bulk-actions": "Custom Bulk Actions",
+                "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
+            },
+            "type": "library",
+            "extra": {
+                "wordpress-install-dir": "tests/wordpress"
+            },
+            "autoload": {
+                "files": [
+                    "extended-cpts.php"
+                ],
+                "psr-4": {
+                    "ExtCPTs\\Tests\\": "tests/phpunit"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John Blackbourn",
+                    "homepage": "https://johnblackbourn.com/"
+                }
+            ],
+            "description": "A library which provides extended functionality to WordPress custom post types and taxonomies.",
+            "homepage": "https://github.com/johnbillion/extended-cpts/",
+            "support": {
+                "issues": "https://github.com/johnbillion/extended-cpts/issues",
+                "source": "https://github.com/johnbillion/extended-cpts/tree/4.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/johnbillion",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-21T00:26:19+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -1119,6 +1276,229 @@
             "time": "2023-11-12T22:43:29+00:00"
         },
         {
+            "name": "wp-media/wp-rocket",
+            "version": "v3.15.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-media/wp-rocket.git",
+                "reference": "83c269caae0307a453dd56baff9e8403c6e63e77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/83c269caae0307a453dd56baff9e8403c6e63e77",
+                "reference": "83c269caae0307a453dd56baff9e8403c6e63e77",
+                "shasum": ""
+            },
+            "require": {
+                "cloudflare/cf-ip-rewrite": "^1.0",
+                "composer/installers": "^1.0 || ^2.0",
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.0",
+                "coenjacobs/mozart": "^0.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "league/container": "^3.3",
+                "mikey179/vfsstream": "1.6.11",
+                "mnsami/composer-custom-directory-installer": "^2.0",
+                "mobiledetect/mobiledetectlib": "^2.8",
+                "php": "^7 || ^8",
+                "phpcompatibility/phpcompatibility-wp": "^2.0",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^7.5 || ^8 || ^9",
+                "psr/container": "1.0.0",
+                "roave/security-advisories": "dev-master",
+                "szepeviktor/phpstan-wordpress": "^1.3",
+                "woocommerce/action-scheduler": "^3.4",
+                "wp-coding-standards/wpcs": "^3",
+                "wp-media/background-processing": "^1.3",
+                "wp-media/monolog": "^0.0",
+                "wp-media/phpunit": "^3",
+                "wp-media/rocket-lazyload-common": "^3.0.11",
+                "wp-media/wp-imagify-partner": "^1.0",
+                "wpackagist-plugin/amp": "^1.1.4",
+                "wpackagist-plugin/hummingbird-performance": "2.0.1",
+                "wpackagist-plugin/jetpack": "9.3.2",
+                "wpackagist-plugin/pdf-embedder": "^4.6",
+                "wpackagist-plugin/simple-custom-css": "^4.0.3",
+                "wpackagist-plugin/spinupwp": "^1.1",
+                "wpackagist-plugin/woocommerce": "^7",
+                "wpackagist-plugin/wp-smushit": "^3"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./inc/Dependencies/ActionScheduler/": [
+                        "woocommerce/action-scheduler"
+                    ],
+                    "vendor/{$vendor}/{$name}/": [
+                        "type:wordpress-plugin"
+                    ]
+                },
+                "mozart": {
+                    "dep_namespace": "WP_Rocket\\Dependencies\\",
+                    "dep_directory": "/inc/Dependencies/",
+                    "classmap_directory": "/inc/classes/dependencies/",
+                    "classmap_prefix": "WP_Rocket_",
+                    "packages": [
+                        "mobiledetect/mobiledetectlib",
+                        "wp-media/background-processing",
+                        "wp-media/rocket-lazyload-common",
+                        "wp-media/wp-imagify-partner",
+                        "wp-media/monolog",
+                        "league/container"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WP_Rocket\\": "inc/",
+                    "WPMedia\\Cloudflare\\": "inc/Addon/Cloudflare/"
+                },
+                "classmap": [
+                    "inc/classes",
+                    "inc/vendors/classes",
+                    "inc/deprecated"
+                ],
+                "exclude-from-classmap": [
+                    "inc/vendors/classes/class-rocket-mobile-detect.php",
+                    "inc/classes/class-wp-rocket-requirements-check.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Media",
+                    "email": "contact@wp-media.me",
+                    "homepage": "https://wp-media.me"
+                }
+            ],
+            "description": "Performance optimization plugin for WordPress",
+            "homepage": "https://wp-rocket.me",
+            "keywords": [
+                "cache",
+                "lazyload",
+                "minification",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/wp-media/wp-rocket/issues",
+                "source": "https://github.com/wp-media/wp-rocket"
+            },
+            "time": "2023-11-23T12:32:37+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/acf-better-search",
+            "version": "4.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-better-search/",
+                "reference": "tags/4.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-better-search.4.2.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-better-search/"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "1.6.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "tags/1.6.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.1.6.3.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/"
+        },
+        {
+            "name": "wpackagist-plugin/disable-comments",
+            "version": "2.4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-comments/",
+                "reference": "tags/2.4.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-comments.2.4.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-comments/"
+        },
+        {
+            "name": "wpackagist-plugin/svg-support",
+            "version": "2.5.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/svg-support/",
+                "reference": "tags/2.5.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.5.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/svg-support/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "21.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/21.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.21.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mail-smtp",
+            "version": "3.10.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
+                "reference": "tags/3.10.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.3.10.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
+        },
+        {
             "name": "wpackagist-theme/twentytwentyfour",
             "version": "1.0",
             "source": {
@@ -1135,6 +1515,21 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwentyfour/"
+        },
+        {
+            "name": "wpengine/advanced-custom-fields-pro",
+            "version": "6.2.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/v2/plugins/composer_download?p=pro&t=6.2.3"
+            },
+            "require": {
+                "composer/installers": "~1.0 || ~2.0"
+            },
+            "replace": {
+                "wpackagist-plugin/advanced-custom-fields": "self.version"
+            },
+            "type": "wordpress-plugin"
         }
     ],
     "packages-dev": [
