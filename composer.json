@@ -38,10 +38,6 @@
       "url":"https://connect.advancedcustomfields.com"
     },
     {
-      "type": "vcs",
-      "url": "git@github.com:spinxdigital/ithemes-security-pro.git"
-    },
-    {
       "type": "composer",
       "url": "https://composer.deliciousbrains.com"
     }
@@ -53,7 +49,7 @@
     "oscarotero/env": "^2.1",
     "roots/bedrock-autoloader": "^1.0",
     "roots/bedrock-disallow-indexing": "^2.0",
-    "roots/wordpress": "6.4.1",
+    "roots/wordpress": "^6.4",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.1.0",
     "wpackagist-theme/twentytwentyfour": "^1.0",
