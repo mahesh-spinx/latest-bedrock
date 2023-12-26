@@ -3,6 +3,8 @@ name: bedrock-latest
 recipe: wordpress
 config:
   webroot: web
+  config:
+    php: config/php.ini
 services:
   appserver:
-    type: php:8.2 # Bedrock requires PHP >= 8.0  
+    type: php:8.2 # Bedrock requires PHP >= 8.0
