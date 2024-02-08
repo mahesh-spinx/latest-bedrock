@@ -7,7 +7,7 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 web/app/ai1wm-backups
-web/app/themes/twentytwentyfour/
+web/app/themes/twentytwentyfour
 web/app/cache/*
 
 # WordPress
