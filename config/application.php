@@ -165,7 +165,7 @@ Config::define('AS3CF_SETTINGS', serialize(array(
     // Bucket URL format to use ('path', 'cloudfront')
     'domain' => env('AS3CF_DOMAIN'),
     // Custom domain if 'domain' set to 'cloudfront'
-    // 'cloudfront' => 'cdn.exmple.com',
+    'cloudfront' => env('AS3CF_CLOUD_FRONT'),
     // Enable object prefix, useful if you use your bucket for other files
     'enable-object-prefix' => env('AS3CF_ENABLE_OBJECT_PREFIX'),
     // Object prefix to use if 'enable-object-prefix' is 'true'
