@@ -119,15 +119,25 @@ Config::define('NONCE_SALT', env('NONCE_SALT'));
 /**
  * Custom Settings
  */
-Config::define('AUTOMATIC_UPDATER_DISABLED', true);
-Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+if (! defined('AUTOMATIC_UPDATER_DISABLED')) {
+    Config::define('AUTOMATIC_UPDATER_DISABLED', true);
+}
+
+if (! defined('DISABLE_WP_CRON')) {
+    Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
+}
+
 
 // Disable the plugin and theme file editor in the admin
-Config::define('DISALLOW_FILE_EDIT', true);
+if (! defined('DISALLOW_FILE_EDIT')) {
+    Config::define('DISALLOW_FILE_EDIT', true);
+}
+
 
 // Disable plugin and theme updates and installation from the admin
-Config::define('DISALLOW_FILE_MODS', true);
-
+if (! defined('DISALLOW_FILE_MODS')) {
+    Config::define('DISALLOW_FILE_MODS', true);
+}
 // Limit the number of post revisions
 Config::define('WP_POST_REVISIONS', env('WP_POST_REVISIONS') ?? true);
 
@@ -183,9 +193,15 @@ Config::define('AS3CF_SETTINGS', serialize(array(
 /**
  * Debugging Settings
  */
-Config::define('WP_DEBUG_DISPLAY', false);
-Config::define('WP_DEBUG_LOG', false);
-Config::define('SCRIPT_DEBUG', false);
+if (! defined('WP_DEBUG_DISPLAY')) {
+    Config::define('WP_DEBUG_DISPLAY', false);
+}
+if (! defined('WP_DEBUG_LOG')) {
+    Config::define('WP_DEBUG_LOG', false);
+}
+if (! defined('SCRIPT_DEBUG')) {
+    Config::define('SCRIPT_DEBUG', false);
+}
 ini_set('display_errors', '0');
 
 /**
